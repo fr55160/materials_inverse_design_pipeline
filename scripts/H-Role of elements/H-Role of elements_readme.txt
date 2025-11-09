@@ -1,0 +1,7 @@
+The script 1-Statistical_analysis_of_elements_role_Physical.py is a complex workflow that begins by parsing chemical compositions like “Al0.2Fe0.2Cr0.6” into numerical vectors, each column representing an element’s molar fraction. To remove the compositional constraint (fractions summing to one), a centered log-ratio (CLR) transformation is applied, yielding independent variables suitable for statistical learning. Each performance score (g₁–g₉) is then modeled using a Random Forest, tuned by cross-validation to ensure robust predictions. Finally, the trained models are analyzed through feature importance, permutation importance, and SHAP values, providing detailed insight into how each element influences material performance, with full logging, figures, and serialized models saved for reproducibility.
+
+The script 2-PDP_Analysis.py has a similar purpose: by comparing the average value of the target to the average value when "a given element is significantly present (30% at.)", it carries out a "partial dependence" analysis. The output is a data file, that later serves to draw graphs. It works from data which source has to be specified line 16. It produces data that allow then to plot graphs, the output file is specified line 17.
+
+The script 3-PDP_heatmap_3colors.py uses the partial dependence analysis data to draw 2 figures featuring the proportion of positive impact, and the impact on average value (considering also the standard deviation). These figures are saved in the "PDP" folder.
+
+

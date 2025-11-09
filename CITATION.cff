@@ -1,0 +1,11 @@
+
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "materials_inverse_design_pipeline"
+authors:
+  - family-names: "Rousseau"
+    given-names: "François"
+version: "1.0.0"
+doi: "10.5281/zenodo.xxxxxxx"
+date-released: "2025-01-01"
+url: "https://github.com/fr55160/materials_inverse_design_pipeline"

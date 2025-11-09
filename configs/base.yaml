@@ -1,0 +1,9 @@
+
+# Base configuration for the materials inverse design pipeline
+data_dir: "data/sample"
+results_dir: "results"
+seed: 42
+
+train:
+  test_size: 0.2
+  random_state: 42

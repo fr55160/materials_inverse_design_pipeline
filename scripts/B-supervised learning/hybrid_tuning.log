@@ -1,0 +1,9 @@
+2025-11-04 22:35:57,578 [INFO] Configuration GPU activée : False
+2025-11-04 22:35:57,578 [INFO] 2025-11-04 22:35:57 - Loading data from C:\Users\François\Documents\Hephaistos\pipeline\Database\Learning_Database_Hephaistos_outliers_score.csv
+2025-11-04 22:35:57,578 [INFO] 2025-11-04 22:35:57 - Starting Study_case 8/1
+2025-11-04 22:37:36,592 [INFO] Searching the best hyperparameters using 136 samples...
+2025-11-04 22:38:26,850 [INFO] Finished hyperparameter search!
+2025-11-04 22:38:26,852 [INFO] Refitting the estimator using 136 samples...
+2025-11-04 22:38:26,878 [INFO] Finished refitting! (elapsed time: 0.026 sec.)
+2025-11-04 22:38:26,923 [INFO] Study_case 8 - New best model saved: R2_test=0.6505 (Delta +0.0233)
+2025-11-04 22:38:34,017 [INFO] Features selected for training: ['avg_radius', 'std_radius', 'std_weight', 'unique_elements', 'std_d', 'avg_f', 'std_d_shell_n', 'avg_group', 'avg_en_allen', 'std_en_allen', 'std_melting_point', 'DeltaH_mix', 'd_virt']

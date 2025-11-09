@@ -1,0 +1,21 @@
+2025-11-09 13:16:38,277 [INFO] === Début du script de SHAP analysis v2 ===
+2025-11-09 13:16:38,309 [INFO] NVML initialisé avec succès
+2025-11-09 13:16:38,309 [INFO] Chargement des données depuis C:\Users\François\Documents\Hephaistos\pipeline\H-Role of elements\Hephaistos_Compressed_LearningDB.csv...
+2025-11-09 13:16:38,468 [INFO] Données: 15700 matériaux, 64 colonnes
+2025-11-09 13:16:38,468 [INFO] Mode NORMAL: tous les matériaux seront analysés
+2025-11-09 13:16:39,185 [INFO] Split train/test: 12560/3140 lignes
+2025-11-09 13:16:39,201 [INFO] --- [1/5] Analyse du score: Melting_Temperature ---
+2025-11-09 13:55:38,354 [INFO] Best params: {'max_depth': 8, 'learning_rate': 0.052611943160385984, 'subsample': 0.8, 'colsample_bytree': 0.6, 'gamma': 0.2464301156193972, 'reg_lambda': 6.823275079086794, 'num_boost_round': 1500}, best_iteration=1443
+2025-11-09 13:55:43,579 [INFO] R2 train: 0.987, test: 0.930
+2025-11-09 13:55:44,691 [INFO] Saved Obs vs Pred: C:\Users\François\Documents\Hephaistos\pipeline\H-Role of elements\SHAP analysis\obs_vs_pred_Melting_Temperature.png
+2025-11-09 13:55:45,534 [INFO] Saved residuals dist: C:\Users\François\Documents\Hephaistos\pipeline\H-Role of elements\SHAP analysis\residuals_Melting_Temperature.png
+2025-11-09 13:55:46,473 [INFO] Saved feature importances: C:\Users\François\Documents\Hephaistos\pipeline\H-Role of elements\SHAP analysis\feat_imp_Melting_Temperature.png
+2025-11-09 13:55:52,094 [INFO] Saved PDP: C:\Users\François\Documents\Hephaistos\pipeline\H-Role of elements\SHAP analysis\pdp_Melting_Temperature.png
+2025-11-09 13:55:59,215 [INFO] Saved permutation importance: C:\Users\François\Documents\Hephaistos\pipeline\H-Role of elements\SHAP analysis\perm_imp_Melting_Temperature.png
+2025-11-09 13:56:00,216 [INFO] Step done in 2361.0s | GPU util: 0% (Temp: 32°C)% | CPU util: 4.7%
+2025-11-09 13:56:00,216 [INFO] Calcul des valeurs SHAP...
+2025-11-09 13:56:02,371 [INFO] Saved SHAP Mean Abs: C:\Users\François\Documents\Hephaistos\pipeline\H-Role of elements\SHAP analysis\abs_shap_bar_Melting_Temperature.png
+2025-11-09 13:56:06,483 [INFO] Saved SHAP Summary: C:\Users\François\Documents\Hephaistos\pipeline\H-Role of elements\SHAP analysis\shap_summary_Melting_Temperature.png
+2025-11-09 13:56:09,313 [INFO] Saved SHAP Force Plot: C:\Users\François\Documents\Hephaistos\pipeline\H-Role of elements\SHAP analysis\force_plot_13529_Melting_Temperature.png
+2025-11-09 13:56:09,347 [INFO] Saved model: C:\Users\François\Documents\Hephaistos\pipeline\H-Role of elements\SHAP analysis\best_xgb_Melting_Temperature.pkl
+2025-11-09 13:56:09,347 [INFO] --- [2/5] Analyse du score: Density ---

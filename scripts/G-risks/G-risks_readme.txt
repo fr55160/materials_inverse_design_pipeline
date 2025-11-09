@@ -1,0 +1,20 @@
+This folder is dedicated to the assessment of the risks, and the build-up of a new Pareto front taking these risks into account.
+
+In the folder 0-Theory, two scripts are available to plot mathematical quantities defined in Chapter 8 of the thesis: p_star.py plots the threshold probability p* versus kappa (log ratio of the risk Indicator) and theta (cos(theta) is the correlation coefficient); Phi_bar_p3.py plots the values of the correction factor (versus a mere sum of the risk indicators) for different values of p, versus kappa and theta.
+
+The script 1-flag_forbidden_and_energy.py completes a database with 3 new columns: one indicating if a forbidden element (ore more) enter the composition; the second giving the energy footprint associated to the full extractions of the necessary elements; the third giving the energy footprint when the real recycling rate is taken into account. The input file must be specified line 23.
+
+The following steps of the pipeline requires intermediate steps available in the folder 2-Supply Risk and developped in Chapter 8 of the thesis. 
+From the companionality matrix (quantifying how much a "direct by-product" an element is), using the results obtained with the absorbant Markov chains, the script 1-compute_ME_HE.py generates a csv file M_E_over_HE.csv that carries the "global" companionality.
+
+The next script, 2-compute_ME_C.py, combines the global companionality to the production of host elements by country to generate M_E_over_C.csv, the matrix assigning to each element the global share of its origin by country. It allows to compute the associated correlation matrix Sigma_E.csv. And then, a hierarchical linkage clustering allows to reorder the elements to "group together" the ones with the most important corrélations (in the thesis, it is established that it is strongly bound to the country of production, with two main players, South Africa for platinum-group metals, and China). Figures are generated to illustrate all this.
+
+The threshold probability p* as defined in the thesis can then be computed (3-p_star_SR_EU.py), combining the correlation matrix with the supply risk index (values in SR_EU.csv). The p* matrix is computed (p_star.csv) and the corresponding figure is generated, underlying the correlations.
+
+These previous steps make possible to compute a global risk index for an alloy. This is the point of script 4-compute_alloy_supply_risk.py. The input file to be enriched with the supply risk index has to be specified line 49, and the value of the parameter epsilon (an approximation of the typical frequency of risk realization, see Chapter 8 of the thesis) is set line 53. The output file is placed in the folder G-risks\2-Supply Risk, with a "withSR" extension.
+
+The script 5-Ashby_SR&Energy.py plots the Ashby diagram Energy Footprint x Supply Risk. Input files are to be specified lines 18 and 19.
+
+Back to folder G-risks, the folder 3-Financial Risk is dedicated to the assessment of the financial risk induced by companionality. The script best_eta.py optimizes a regularization parameter that allows to assess a "perceived price / production elasticity". The eventual best value of eta for each element is written in the output M_elast_output.csv line 41 ("eta(lambda*)"). These values can then be reported in the excel file "indice compagnon2" line 27: launching the vba macro updates the colors in the periodic table from the values of line 27.
+
+4-bars_pareto_intervals.py is a script plotting as bar charts the different target quantities for three categories of alloys: legacy superalloys, global Pareto front, and the Pareto front of the remaining once the filter on elements has been applied. It uses average values and standard deviation for each targets, the values are directly written script.
