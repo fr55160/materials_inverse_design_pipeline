@@ -6,6 +6,6 @@ authors:
   - family-names: "Rousseau"
     given-names: "François"
 version: "1.0.0"
-doi: "10.5281/zenodo.xxxxxxx"
+doi: "10.5281/zenodo.17567098"
 date-released: "2025-01-01"
 url: "https://github.com/fr55160/materials_inverse_design_pipeline"
