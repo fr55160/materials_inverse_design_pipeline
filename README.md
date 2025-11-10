@@ -1,5 +1,6 @@
 
 # materials_inverse_design_pipeline
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17567098.svg)](https://doi.org/10.5281/zenodo.17567098)
 
 This repository contains the code and configuration files for the project *Materials Inverse Design Pipeline*,
 developed in the context of research and publication for **npj Computational Materials**.
