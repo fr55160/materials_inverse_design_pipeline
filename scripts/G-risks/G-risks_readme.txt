@@ -1,6 +1,6 @@
 This folder is dedicated to the assessment of the risks, and the build-up of a new Pareto front taking these risks into account.
 
-In the folder 0-Theory, two scripts are available to plot mathematical quantities defined in Chapter 8 of the thesis: p_star.py plots the threshold probability p* versus kappa (log ratio of the risk Indicator) and theta (cos(theta) is the correlation coefficient); Phi_bar_p3.py plots the values of the correction factor (versus a mere sum of the risk indicators) for different values of p, versus kappa and theta.
+In the folder 0-Theory, two scripts are available to plot mathematical quantities defined in Chapter 8 of the thesis: p_star.py plots the threshold probability p* versus kappa (log ratio of the risk Indicator) and theta (cos(theta) is the correlation coefficient); Phi_bar_p3.py plots the values of the correction factor (versus a mere sum of the risk indicators) for different values of p, versus kappa and theta. Two more scripts are there to illustrate the Gaussian modelisation to tackle the combination of risks.
 
 The script 1-flag_forbidden_and_energy.py completes a database with 3 new columns: one indicating if a forbidden element (ore more) enter the composition; the second giving the energy footprint associated to the full extractions of the necessary elements; the third giving the energy footprint when the real recycling rate is taken into account. The input file must be specified line 23.
 
